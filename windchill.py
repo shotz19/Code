@@ -1,3 +1,4 @@
+# Stephanie Hotz 9.13.18
 import math
 import sys
 t=sys.argv[1]

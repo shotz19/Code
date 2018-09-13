@@ -1,3 +1,4 @@
+# Stephanie Hotz 9.13.18
 import sys
 m=float(sys.argv[1])
 d=float(sys.argv[2])
