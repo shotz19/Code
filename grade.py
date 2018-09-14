@@ -1,3 +1,4 @@
+#Stephanie Hotz 9.14.18
 import sys
 grade=float(sys.argv[1])
 keepgoing= True
