@@ -1,8 +1,12 @@
 #stephanie Hotz adventure text based game 9-24-18
+# This is a text based adventure game where the user is asked to make decisions and play mini games.
 import random
+#each def is a different part of the game
+#Here, the user goes to a town then continues on the journey.
 def town():
 	print("You go into a town and see an inn where you can stay the night.\nYou hang out there for the night and decide to continue your adventure in the morning.\n\n")
 	killthedragon()
+#The sphinx is a mini riddle game.
 def sphinx():
 	print("The sphinx is sitting on a rock and says to you\nI have a riddle for you.")
 	riddle=input("Voiceless it cries\nWingless flutters\nToothless bites\nMouthless mutters.")
@@ -61,6 +65,7 @@ def impass():
 			exit()
 	print("Yay! You climbed the impass")
 	cave()
+#This is the start of the journey
 def killthedragon():
 	print("You walk up to a giant, looming mountain")
 	print("You are told that this is where the dragon lives.")
@@ -74,6 +79,7 @@ def killthedragon():
 		print("I don't know what "+sphinxi+"means. Please type 1 or 2")
 		killthedragon()
 	impass()
+#this is the beginning of the game where the user can choose to go or hang out in a town
 def start():
 	print("\nYou are here to kill a dragon!\n\nThe dragon has been terrorizing this city for years.")
 	one=input("\nYou find yourself at a fork in the road. \n\nWould you like to \n\n1) continue on \n\n2) go to a town where you can hang out")
