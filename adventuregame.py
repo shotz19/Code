@@ -1,3 +1,4 @@
+#stephanie Hotz adventure text based game 9-24-18
 import random
 def town():
 	print("You go into a town and see an inn where you can stay the night.\nYou hang out there for the night and decide to continue your adventure in the morning.\n\n")
@@ -13,10 +14,23 @@ def sphinx():
 	else:
 		print("The sphinx does not like your answer!\nYou must continue on your original path. \nYou are lucky you survived an encounter with this dangerous creature! ")
 def dragon():
-	print("You have found the dragon!")
+	print("You have found the dragon!\n\n To defeat it you must slay it with your sword")
+	sword=input("Pick up the sword by typing: sword")
+	if sword == "sword":
+		print("Now you must slay the dragon.")
+		slay=input("Type slay to slay the dragon")
+		if slay == "slay":
+			print("Yay! You slayed the dragon!")
+			exit()
+		else:
+			print("You failed to slay the dragon, so you die a horrible death and leave the dragon to kill the townspeople")
+			exit()
+	else:
+		print("Your sword skills are clearly struggling. \nYou accidently slice yourslef in half with your sword.")
+		exit()
 def game():
 	riddle=input("The goblin looks up at you and gives you a piece of paper that says:\n\nThis thing all things devours\nBirds, beasts, trees, flowers;\nGnaws iron, bites steel\nGrinds hard stones to meal\nSlays king, ruins town\nAnd beats high mountain down.")
-	if riddle == "time"
+	if riddle == "time":
 		print("The goblin shows you a secret passageway through the cave that leads you to the dragon's layer.")
 		dragon()
 	else:
@@ -71,7 +85,6 @@ def start():
 	else:
 		print("I don't know what "+one+"means. Please type 1 or 2")
 		start()
-start()
 def sphinx():
 	print("The sphinx is sitting on a rock and says to you\nI have a riddle for you.")
 	riddle=input("Voiceless it cries\nWingless flutters\nToothless bites\nMouthless mutters.")
@@ -84,4 +97,4 @@ def sphinx():
 	else:
 		print("The sphinx does not like your answer!\nYou must continue on your original path. \nYou are lucky you survived an encounter with this dangerous creature! ")
 		impass()
-
+start()
