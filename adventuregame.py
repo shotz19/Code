@@ -47,6 +47,7 @@ def cave():
 		game()
 	elif cavei =="2":
 		("You continue on your path and will never get to learn what lies within the cave.")
+		dragon()
 	else:
 		print("I do not understand. Please enter 1 or 2")
 		cave()
