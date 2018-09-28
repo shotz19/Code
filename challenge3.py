@@ -1,3 +1,4 @@
+#Generate  a  list  of  10  random  numbers  between  0  and  100.  Get  them  inorder  from  largest  to  smallest,  removing  numbers  divisible  by  3. 
 import random
 g=[]
 for x in range(10):

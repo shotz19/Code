@@ -1,4 +1,4 @@
-'''#empty list
+#empty list
 a=[]
 #adds to the end
 a.append(4)
@@ -40,7 +40,7 @@ for x in range(7,707,7):
 	f.append(x)
 print(f)
 print(len(f))
-#list of 10 random numbers'''
+#list of 10 random numbers
 import random
 g=[]
 for x in range(10):

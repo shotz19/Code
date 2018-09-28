@@ -1,3 +1,4 @@
+#Allow  10  random  integers  to  be  entered  as  arguments.  Catch  any  potential  errors.  Print  them  sorted  from  small  to  large,  then  large  to  small,  and  then  print  the  sum
 import sys
 while True:
 	try:
