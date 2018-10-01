@@ -12,9 +12,9 @@ while bombs<B:
 	bombx=random.randint(0,W-1)
 	board[bomby][bombx]="*"
 	bombs=bombs+1
-for x in range(H-1):
+for x in range(H):
 	count=0
-	for y in range(W-1):
+	for y in range(W):
 		if board[x][y]!="*":
 			count=0
 			if board[x+1][y]=="*":
