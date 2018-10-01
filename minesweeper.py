@@ -5,13 +5,17 @@ import random
 W=int(sys.argv[1])
 H=int(sys.argv[2])
 B=int(sys.argv[3])
+if B>W*H:
+	print("NO!")
+	exit()
 board=[[0]*(W+2) for i in range(H+2)]
 bombs=0
 while bombs<B:
 	bomby=random.randint(0,H-1)
 	bombx=random.randint(0,W-1)
-	board[bomby][bombx]="*"
-	bombs=bombs+1
+	if board[bomby][bombx]!="*":
+		board[bomby][bombx]="*"
+		bombs=bombs+1
 for x in range(H):
 	count=0
 	for y in range(W):
