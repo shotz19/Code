@@ -1,12 +1,17 @@
+#ON my honor, I have neither given nor recieved any unauthorized aid.
 #Stephanie Hotz Minesweeper 10.1.18
 import sys
 import random
+
+
 #WHB
 #Initializing board size
 W=int(sys.argv[1])
 H=int(sys.argv[2])
 B=int(sys.argv[3])
 score=0
+
+
 #function to print board
 def printboard():
 	#deleting extra columns
@@ -25,6 +30,8 @@ def printboard():
 	for x in range (H):
 		board1[x].append(0)
 		board1[x].append(0)
+
+
 #function for radiatin which prints around a space
 def printaround(therow,thecolumn,score):
 	score=score
@@ -44,14 +51,22 @@ def printaround(therow,thecolumn,score):
 	score=score+1
 	board1[therow-1][thecolumn-1]= board[therow-1][thecolumn-1]
 	score=score+1
+
+
 #some error catching if the user gives more bombs than space on the board
 if B>W*H:
 	print("NO!")
 	exit()
+
+
 #Initializing the board with answers
 board=[[0]*(W+2) for i in range(H+2)]
+
+
 #Initializing the playing board
 board1=[["o"]*(W+2) for i in range(H+2)]
+
+
 #placing the bombs
 bombs=0
 while bombs<B:
@@ -61,6 +76,8 @@ while bombs<B:
 	if board[bomby][bombx]!="*":
 		board[bomby][bombx]="*"
 		bombs=bombs+1
+
+
 #making sure the bombs do not overlap
 for x in range(H):
 	count=0
@@ -85,6 +102,8 @@ for x in range(H):
 				count=count+1
 			board[x][y]=count
 printboard()
+
+
 #gameplay
 while True:
 	#choosing between placing flag and guessing spots
