@@ -96,6 +96,7 @@ class PeriodicTable:
 
 		#This goes through the dictionary of elements and labels them as symbol, element.
 		for symbol, element in self.allelements.items():
+			print(symbol,element)
 
 			#The difference is taken between the number entered and the atomic weight of the element being tested and is compared to the current least difference.
 			#If the difference is greater, it will move on to the next element, if it is lesser, the lesser number will become the new lowest.
@@ -112,12 +113,11 @@ class PeriodicTable:
 
 		#This goes through the dictionary of elements and labels them as symbol, element.
 		for symbol, element in self.allelements.items():
-
 			#This checks to see if the given is equal to any of the element's attributes.
 			#If it is, it will return the element.
 			if given in (element.getWeight(),element.getSymbol(),element.getNumber(),element.getElement()):
 				return (element)
-			else: 
+			elif symbol == 'Lr' and given not in (element.getWeight(),element.getSymbol(),element.getNumber(),element.getElement()):
 				return (given+" is not a valid element attribute. Please try again.")
 
 
@@ -135,4 +135,5 @@ class PeriodicTable:
 		return info
   
 	__repr__ = __str__
+
 
