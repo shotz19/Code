@@ -29,17 +29,17 @@ def main () :
 		elif str.lower(choice) == "compound":
 			clear ()
 			compound = input ("Enter a compound: ")
-			print (pt.calcWeight(compound))
+			print (pt.calcWeight(compound), "u")
 
 		elif str.lower(choice) == "moles" :
 			clear ()
 			compound, grams = input ("Enter a compound and its weight in grams, split by a space: ").split()
-			print (pt.calcMoles(compound, grams))
+			print (pt.calcMoles(compound, grams), "moles")
 
 		elif str.lower(choice) == "nearest":
 			clear ()
 			weight = input ("Enter a weight: ")
-			print(pt.nearestWeight(float(weight)))
+			print(pt.nearestWeight(float(weight)), "u")
 
 		elif str.lower(choice)  == "quit" :
 			clear
