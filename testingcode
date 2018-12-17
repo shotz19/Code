@@ -1,0 +1,5 @@
+import sys
+yards = sys.argv[1]
+if yards < 17:
+   yards = yards
+print(yards)

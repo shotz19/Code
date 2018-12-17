@@ -23,3 +23,7 @@ def filterpic(pic):
 			image.putpixel((x,y),(r,g,b))
 	image.show()
 filterpic(sys.argv[1])
+filterpic(sys.argv[2])
+filterpic(sys.argv[3])
+filterpic(sys.argv[4])
+filterpic(sys.argv[5])
